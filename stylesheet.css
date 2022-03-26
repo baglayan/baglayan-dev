@@ -1,8 +1,13 @@
 p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Product Sans', 'Roboto', sans-serif;
+    color: #3edcd3;
 }
 
 .maintext {
     text-align: center;
     font-size: 25pt;
+}
+
+body {
+    background-color: #081b1a;
 }
