@@ -1,0 +1,305 @@
+@font-face
+{
+    font-family: "Product Sans";
+    src: url("static/Product Sans Regular.ttf");
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: "Product Sans Bold";
+    src: url("static/Product Sans Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: "Product Sans Italic";
+    src: url("static/Product Sans Italic.ttf");
+}
+
+@font-face
+{
+    font-family: "Product Sans Bold Italic";
+    src: url("static/Product Sans Bold Italic.ttf");
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+html
+{
+    cursor: default;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    color: darkslategrey;
+    background-color: whitesmoke;
+
+    font-family: "Product Sans Bold", Helvetica, sans-serif;
+}
+
+.topbar
+{
+    margin-left: 0em;
+    margin-right: 0em;
+    overflow: hidden;
+
+    background-color: lightgrey;
+
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    box-shadow: 0px 4px 0 0 rgba(49, 49, 49, 0.473);
+    width: 100%;
+
+}
+
+.topbar ul
+{
+    list-style-type: 0;
+
+    margin: 0em;
+    text-align: right;
+    
+}
+
+.topbar li
+{
+    display: inline;
+    float: right;
+}
+
+.topbar li a
+{
+    display: block;
+    padding: 1em;
+
+    
+    color: gray;
+
+    text-align: right;
+    text-decoration: none;
+}
+
+.topbar q
+{
+
+    float: left !important;
+    display: block;
+    padding: 1em;
+
+    color: gray;
+
+    font-style: italic;
+    text-align: left !important;
+    text-decoration: none;
+}
+
+.topbar li a:hover
+{
+    background-color: grey;
+    color: lightgrey;
+    
+    cursor: default;
+}
+
+.nav
+{
+    text-align: right;
+}
+
+.name
+{
+    font-size: 2.3em;
+    margin-top: 2em;
+}
+
+.imagesubtext
+{
+    font-size: 1em;
+    font-style: italic;
+    text-align: right;
+    margin-top: -1.3;
+    margin-bottom: 2.3em;
+    line-height: 1.3em;
+}
+
+.entiretext
+{
+    line-height: 3em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.entiretext h1
+{
+    margin-bottom: 0.3em;
+    font-family: "Product Sans Bold", Helvetica, sans-serif;
+}
+
+.entiretext h2
+{
+    margin-bottom: 0.8em;
+    font-size: 3rem;
+}
+
+.entiretext h3
+{
+    font-size: 1.6em;
+    margin-top:0.4em;
+    margin-bottom: 0.4em;
+}
+
+.wrapper
+{
+    position: relative;
+    min-height: 100vh;
+}
+
+.pagecontents
+{
+    padding-bottom: 16em;
+}
+
+.smalltext
+{
+    line-height: 2em;
+    font-size: 1.3em;
+    margin-bottom: 2em;
+}
+
+.listcontainer
+{
+    line-height: 2em;
+
+    font-size: 1.2em;
+}
+
+.listcontainer ul
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.listcontainer ul ul
+{
+    list-style-type: disc;
+    padding-left: 3em;
+}
+
+.images img
+{
+    width: 100%;
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 0;
+    margin-top: 5em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+    background-color: grey;
+    color: lightgrey;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+form
+{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+form input
+{
+    background-color: gray;
+    color: lightgrey;
+    border: none;
+    border-color: darkgrey;
+    width: 20%
+}
+
+hr
+{
+    margin-bottom: 3em;
+}
+
+table
+{   
+    display: block;
+    overflow: auto;
+    word-wrap: break-word;
+
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3em;
+    margin-bottom: 1em;
+
+    font-size: 1.2rem;
+}
+
+th, td
+{
+    text-align: left;
+    padding: 1em;
+}
+
+th
+{
+    background-color: lightgrey;
+}
+
+td
+{
+    background-color: #eeeeee
+}
+
+#topwarning
+{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+#hello
+{
+    font-size: 3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#art
+{
+    font-size: 4em;
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+}
+
+#svglogocontainer
+{
+    margin: auto;
+    margin-top: 0.3em;
+    width: 40px;
+}
+
+#lasereyes
+{
+    width: 200;
+    margin-left: 30px;
+    float: right;
+}
