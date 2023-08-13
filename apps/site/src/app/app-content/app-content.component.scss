@@ -1,11 +1,11 @@
 p,
 a {
-    color: white;
+    color: #E5E5E5;
     font-family: 'Monaco', 'Consolas', monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 2.6vw;
-    line-height: 9.8vh;
+    line-height: 4vw;
 }
 
 p {
@@ -13,9 +13,28 @@ p {
 }
 
 .cmdstart {
-    color: #00DFDF
+    color: #87BBA2
 }
 
 .command {
-    color: #EECD1E
+    color: #FCA311
+}
+
+.shell-info {
+    color: #6A2E35;
+}
+
+.window {
+    padding: 3em;
+    width: 50vw;
+    background: #002429;
+    border-radius: 2em;
+    border-top: 10em;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
