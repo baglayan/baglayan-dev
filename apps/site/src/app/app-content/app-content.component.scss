@@ -11,8 +11,8 @@ a {
     font-family: 'Monaspace', 'Monaco', 'Consolas', monospace;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.6vw;
-    line-height: 4vw;
+    font-size: clamp(1rem, 2.6vw, 1.75rem);
+    line-height: clamp(1.5rem, 4vw, 2.5rem);
 }
 
 p {
@@ -32,8 +32,10 @@ p {
 }
 
 .window {
-    padding: 3em;
-    width: 50vw;
+    box-sizing: border-box;
+    padding: clamp(1.25rem, 4vw, 3rem);
+    width: max(50vw, 48rem);
+    max-width: 90vw;
     background: #002429;
     border-radius: 2em;
     border-top: 10em;
