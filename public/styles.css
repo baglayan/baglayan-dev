@@ -1,8 +1,12 @@
 @font-face {
     font-family: 'Monaspace';
-    src: url('../../assets/fonts/Monaspace/MonaspaceNeon-Regular.woff') format('woff');
+    src: url('assets/fonts/Monaspace/MonaspaceNeon-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+html {
+    background: #002C32;
 }
 
 p,
@@ -20,11 +24,11 @@ p {
 }
 
 .cmdstart {
-    color: #87BBA2
+    color: #87BBA2;
 }
 
 .command {
-    color: #FCA311
+    color: #FCA311;
 }
 
 .shell-info {

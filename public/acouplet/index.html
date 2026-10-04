@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Acouplet for macOS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A native menu bar app for Sony headphones. Download Acouplet for macOS 15.4 or later." />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/acouplet/styles.css" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/" aria-label="Meriç Bağlayan home">&gt;b_</a>
+    </header>
+
+    <main>
+        <section class="intro" aria-labelledby="title">
+            <h1 id="title">Acouplet</h1>
+            <p class="release">Version 0.27 Early alpha</p>
+            <p class="description">Noise control, battery levels, multipoint and <button class="hint-trigger" aria-expanded="false" aria-controls="ldac-info">LDAC<sup>*</sup></button>, from your Mac’s menu bar.</p>
+            <aside class="hint-panel" id="ldac-info" popover tabindex="0" aria-label="About LDAC">Yes, real LDAC playback from your Mac! It's experimental, and being tested. Enable in "More Settings…"</aside>
+            <p class="details">For <button class="hint-trigger" aria-expanded="false" aria-controls="supported-devices">Sony devices</button>.</p>
+            <aside class="hint-panel device-list" id="supported-devices" popover tabindex="0" aria-labelledby="devices-title">
+                <h2 id="devices-title">Supported devices</h2>
+                <p>Primarily tested with WF-1000XM5.</p>
+                <h3>Headphones and earbuds</h3>
+                <ul>
+                    <li>WF-1000XM6</li>
+                    <li>WF-1000XM5</li>
+                    <li>WF-1000XM4</li>
+                    <li>WF-1000XM3</li>
+                    <li>WF-1000X</li>
+                    <li>LinkBuds (WF-L900)</li>
+                    <li>LinkBuds Clip (WF-LC900)</li>
+                    <li>LinkBuds Fit (WF-LS910N)</li>
+                    <li>LinkBuds Open (WF-L910)</li>
+                    <li>LinkBuds S (WF-LS900N)</li>
+                    <li>LinkBuds UC (WF-L900UC)</li>
+                    <li>WF-C500</li>
+                    <li>WF-C510</li>
+                    <li>WF-C700N</li>
+                    <li>WF-C710N</li>
+                    <li>WF-H800</li>
+                    <li>WF-SP700N</li>
+                    <li>WF-SP800N</li>
+                    <li>WF-SP900</li>
+                    <li>WH-1000XM6</li>
+                    <li>WH-1000XM5</li>
+                    <li>WH-1000XM4</li>
+                    <li>WH-1000XM4C</li>
+                    <li>WH-1000XM3</li>
+                    <li>WH-1000XM2</li>
+                    <li>1000X THE COLLEXION (WH-1000XX)</li>
+                    <li>WH-CH520</li>
+                    <li>WH-CH530</li>
+                    <li>WH-CH535</li>
+                    <li>WH-CH700N</li>
+                    <li>WH-CH720N</li>
+                    <li>WH-CH730N</li>
+                    <li>WH-CH735N</li>
+                    <li>WH-H800</li>
+                    <li>WH-H810</li>
+                    <li>WH-H900N</li>
+                    <li>WH-H910N</li>
+                    <li>WH-XB700</li>
+                    <li>WH-XB900N</li>
+                    <li>WH-XB910N</li>
+                    <li>ULT WEAR (WH-ULT900N)</li>
+                    <li>MDR-XB950B1</li>
+                    <li>MDR-XB950N1</li>
+                    <li>WI-1000X</li>
+                    <li>WI-1000XM2</li>
+                    <li>WI-C100</li>
+                    <li>WI-C600N</li>
+                    <li>WI-H700</li>
+                    <li>WI-SP600N</li>
+                </ul>
+                <h3>Gaming</h3>
+                <ul>
+                    <li>INZONE Buds (WF-G700N)</li>
+                    <li>INZONE H9 II (WH-G910N)</li>
+                </ul>
+                <h3>Speakers</h3>
+                <ul>
+                    <li>BRAVIA Theatre U (HT-AN7)</li>
+                    <li>LinkBuds Speaker (SRS-LS1)</li>
+                    <li>SRS-NS7</li>
+                    <li>SRS-NS7R</li>
+                    <li>ULT FIELD 1 (SRS-ULT10)</li>
+                    <li>ULT FIELD 3 (SRS-ULT30)</li>
+                    <li>ULT FIELD 5 (SRS-ULT50)</li>
+                    <li>ULT FIELD 7 (SRS-ULT70)</li>
+                    <li>ULT TOWER 5 (SRS-ULT500)</li>
+                    <li>ULT TOWER 7 (SRS-ULT700)</li>
+                    <li>ULT TOWER 9 (SRS-ULT900)</li>
+                    <li>ULT TOWER 9AC (SRS-ULT900AC)</li>
+                    <li>ULT TOWER 10 (SRS-ULT1000)</li>
+                    <li>ULT TOWER MAX (SRS-ULT3000)</li>
+                </ul>
+            </aside>
+            <div class="download">
+                <a href="https://github.com/baglayan/acouplet/releases/download/v0.27/Acouplet-0.27.dmg" download>Download for macOS</a>
+                <p>macOS 15.4 or later · 25.2 MB</p>
+            </div>
+        </section>
+        <picture class="preview">
+            <source srcset="/acouplet/popover-dark.png" media="(prefers-color-scheme: dark)" />
+            <img src="/acouplet/popover-light.png" width="864" height="1358" alt="Acouplet showing Sony WF-1000XM5 battery levels, noise control, multipoint and audio settings." />
+        </picture>
+    </main>
+
+    <footer>
+        <p>© 2026 Meriç Bağlayan</p>
+        <p>Acouplet is not affiliated with or endorsed by Sony or Apple.</p>
+    </footer>
+    <script>
+        let togglingHint = false;
+        document.querySelectorAll('.hint-trigger').forEach(trigger => {
+            const panel = document.getElementById(trigger.getAttribute('aria-controls'));
+            let closeTimer;
+
+            function show() {
+                if (togglingHint) return;
+                clearTimeout(closeTimer);
+                togglingHint = true;
+                setTimeout(() => togglingHint = false, 0);
+                panel.showPopover();
+                const rect = trigger.getBoundingClientRect();
+                const below = window.innerHeight - rect.bottom - 24;
+                const above = rect.top - 24;
+                const useBelow = below >= Math.min(panel.scrollHeight, 360) || below >= above;
+                panel.style.maxHeight = `${Math.max(80, Math.min(420, useBelow ? below : above))}px`;
+                panel.style.left = `${Math.max(16, Math.min(rect.left, window.innerWidth - panel.offsetWidth - 16))}px`;
+                panel.style.top = `${useBelow ? rect.bottom + 8 : rect.top - panel.offsetHeight - 8}px`;
+            }
+
+            function scheduleClose() {
+                closeTimer = setTimeout(() => {
+                    if (!trigger.matches(':hover, :focus') && !panel.matches(':hover, :focus-within')) {
+                        panel.hidePopover();
+                    }
+                }, 150);
+            }
+
+            trigger.addEventListener('click', show);
+            trigger.addEventListener('focus', show);
+            trigger.addEventListener('mouseenter', show);
+            panel.addEventListener('mouseenter', () => clearTimeout(closeTimer));
+            [trigger, panel].forEach(element => {
+                element.addEventListener('mouseleave', scheduleClose);
+                element.addEventListener('focusout', scheduleClose);
+            });
+            panel.addEventListener('beforetoggle', () => {
+                togglingHint = true;
+                setTimeout(() => togglingHint = false, 0);
+            });
+            panel.addEventListener('toggle', () => {
+                trigger.setAttribute('aria-expanded', String(panel.matches(':popover-open')));
+            });
+            window.addEventListener('resize', () => panel.hidePopover());
+            window.addEventListener('scroll', () => panel.hidePopover(), { passive: true });
+        });
+    </script>
+</body>
+
+</html>
