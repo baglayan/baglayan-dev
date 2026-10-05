@@ -1,0 +1,108 @@
+# baglayan.dev
+
+> Personal website of Meriç Bağlayan, a computer engineer based in Turkey. Also the home of Acouplet: a free, open-source macOS companion app for Sony Bluetooth headphones, earbuds and speakers.
+
+Acouplet runs in the Mac’s menu bar and requires macOS 15.4 or later. Its features include:
+
+- Noise cancellation, ambient sound and voice focus controls.
+- Battery levels for headphones, individual earbuds and charging cases where supported.
+- Equalizer, DSEE and listening presets.
+- Multipoint connection management and audio-source selection.
+- Touch control settings, earbud fit tests and head gesture practice on compatible devices.
+- Speak-to-Chat, pause-on-removal and automatic power-off settings where supported.
+- A global noise-control keyboard shortcut and low-battery notifications.
+- Experimental LDAC playback from the Mac, with settings up to 96 kHz and 990 kbps on compatible devices.
+- English and Turkish interfaces, with light and dark appearances.
+
+Acouplet is an early alpha. Available features depend on the device; not every feature has been tested on every recognized model.
+
+LDAC is opt-in through “More Settings…”. Setup requires the bundled audio driver, system-audio recording permission and a Mac restart after driver installation.
+
+Acouplet’s application code is MIT-licensed. Acouplet is not affiliated with or endorsed by Sony or Apple.
+
+**Supported devices**
+
+**Headphones and earbuds**
+
+- WF-1000XM6
+- WF-1000XM5
+- WF-1000XM4
+- WF-1000XM3
+- WF-1000X
+- LinkBuds (WF-L900)
+- LinkBuds Clip (WF-LC900)
+- LinkBuds Fit (WF-LS910N)
+- LinkBuds Open (WF-L910)
+- LinkBuds S (WF-LS900N)
+- LinkBuds UC (WF-L900UC)
+- WF-C500
+- WF-C510
+- WF-C700N
+- WF-C710N
+- WF-H800
+- WF-SP700N
+- WF-SP800N
+- WF-SP900
+- WH-1000XM6
+- WH-1000XM5
+- WH-1000XM4
+- WH-1000XM4C
+- WH-1000XM3
+- WH-1000XM2
+- 1000X THE COLLEXION (WH-1000XX)
+- WH-CH520
+- WH-CH530
+- WH-CH535
+- WH-CH700N
+- WH-CH720N
+- WH-CH730N
+- WH-CH735N
+- WH-H800
+- WH-H810
+- WH-H900N
+- WH-H910N
+- WH-XB700
+- WH-XB900N
+- WH-XB910N
+- ULT WEAR (WH-ULT900N)
+- MDR-XB950B1
+- MDR-XB950N1
+- WI-1000X
+- WI-1000XM2
+- WI-C100
+- WI-C600N
+- WI-H700
+- WI-SP600N
+
+**Gaming**
+
+- INZONE Buds (WF-G700N)
+- INZONE H9 II (WH-G910N)
+
+**Speakers**
+
+- BRAVIA Theatre U (HT-AN7)
+- LinkBuds Speaker (SRS-LS1)
+- SRS-NS7
+- SRS-NS7R
+- ULT FIELD 1 (SRS-ULT10)
+- ULT FIELD 3 (SRS-ULT30)
+- ULT FIELD 5 (SRS-ULT50)
+- ULT FIELD 7 (SRS-ULT70)
+- ULT TOWER 5 (SRS-ULT500)
+- ULT TOWER 7 (SRS-ULT700)
+- ULT TOWER 9 (SRS-ULT900)
+- ULT TOWER 9AC (SRS-ULT900AC)
+- ULT TOWER 10 (SRS-ULT1000)
+- ULT TOWER MAX (SRS-ULT3000)
+
+## Acouplet
+
+- [Acouplet for macOS](https://baglayan.dev/acouplet/): Features, supported devices and download.
+- [README](https://raw.githubusercontent.com/baglayan/acouplet/main/README.md): Setup, compatibility and build information.
+- [Source code](https://github.com/baglayan/acouplet): Source, license and issue tracker.
+- [Latest release](https://github.com/baglayan/acouplet/releases/latest): Current download and release notes.
+
+## Optional
+
+- [Meriç Bağlayan](https://baglayan.dev/): Developer’s homepage and contact links.

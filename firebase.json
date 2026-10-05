@@ -28,6 +28,33 @@
       "**/*.dmg",
       "**/*.delta"
     ],
+    "redirects": [
+      {
+        "source": "/index.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/acouplet/index.html",
+        "destination": "/acouplet/",
+        "type": 301
+      },
+      {
+        "source": "/xm5-control",
+        "destination": "/acouplet/",
+        "type": 301
+      },
+      {
+        "source": "/xm5-control/",
+        "destination": "/acouplet/",
+        "type": 301
+      },
+      {
+        "source": "/xm5-control/index.html",
+        "destination": "/acouplet/",
+        "type": 301
+      }
+    ],
     "headers": [
       {
         "source": "/updates/appcast.xml",
