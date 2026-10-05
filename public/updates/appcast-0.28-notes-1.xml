@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Acouplet</title>
+        <item>
+            <title>0.28</title>
+            <pubDate>Mon, 05 Oct 2026 13:33:29 +0300</pubDate>
+            <sparkle:version>63</sparkle:version>
+            <sparkle:shortVersionString>0.28</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.4</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink sparkle:edSignature="ikyxbwSxHCzHM6ZPjxRwzrXcaXWDX4eUjnSSmeDeOEz2BEZ7I8c73R8Vc7KoY+/w5tXPRzUp9kd8R5ppc8mgCw==" sparkle:length="46">https://baglayan.dev/updates/Acouplet-0.28.md</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/baglayan/acouplet/releases/download/v0.28/Acouplet-0.28.dmg" length="26631066" type="application/octet-stream" sparkle:edSignature="OS93cGSjuVbIpDS0ly+AyY8BraxfQUlCTVbEohopcE/kN4f0xmVQAQ9CvEHnnAqxXyv1ojhfRUUzDnMIofRmCw=="/>
+        </item>
+        <item>
+            <title>0.27.1</title>
+            <pubDate>Mon, 05 Oct 2026 01:47:43 +0300</pubDate>
+            <sparkle:version>62</sparkle:version>
+            <sparkle:shortVersionString>0.27.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.4</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink sparkle:edSignature="PZmsoX2w1QFdEzALo/t8kZthRIbiMxFzwiXC/H8Es6/cZSQJ/RHymvqwnrfeUy05Sddo0FClXdfQ5WQyuE6HAw==" sparkle:length="365">https://baglayan.dev/updates/Acouplet-0.27.1.md</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/baglayan/acouplet/releases/download/v0.27.1/Acouplet-0.27.1.dmg" length="26496648" type="application/octet-stream" sparkle:edSignature="QZe1Nm9H9AgGoepaJZxr0n5iShpB9ne99tjAqwd68SF5K5kcoTyDVJk1ULKleu3Y5+kAIIZIGUF8URxOm8VCBg=="/>
+        </item>
+        <item>
+            <title>0.27</title>
+            <pubDate>Sun, 04 Oct 2026 23:37:28 +0300</pubDate>
+            <sparkle:version>61</sparkle:version>
+            <sparkle:shortVersionString>0.27</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.4</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink sparkle:edSignature="5qAoezdc7ivCFWBfdB9Q0la3xeqRs+xXHD1sPTcyRjEXf6ZiWZAMn14TXvpKWhdvt1TT9vqLWkVItU3lPotKCw==" sparkle:length="29">https://baglayan.dev/updates/Acouplet-0.27.md</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/baglayan/acouplet/releases/download/v0.27/Acouplet-0.27.dmg" length="26464761" type="application/octet-stream" sparkle:edSignature="zw9ACEBH8ZHf0hXh0MXvvDGKsCWHJAyqLD1s6XG2Pxd6KSYca08PHPvL7wvZIg7Y3yx+UC6yRAnn2RkB6I83Aw=="/>
+        </item>
+    </channel>
+</rss>
+<!-- sparkle-signatures:
+edSignature: 2yTr5MPxa/jyzfVJj8YG8kqpY1ANujuOyEhDylRCQ+zk7g+sDIy7v76WAd9VIXrL/XJGeTAc8oP0kHIovB1pBA==
+length: 2729
+-->

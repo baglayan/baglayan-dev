@@ -16,7 +16,7 @@ jobs:
         with:
           persist-credentials: false
       - run: node tools/check-acouplet-updates.mjs
-      - run: node tools/stage-acouplet-updates.mjs
+      - run: node tools/stage-acouplet-updates.mjs --check-published
       - uses: FirebaseExtended/action-hosting-deploy@500ac625ca2dd40cbd15f7659af953801858032a
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'

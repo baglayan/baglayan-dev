@@ -7,5 +7,6 @@ firebase-debug.log
 firebase-debug.*.log
 npm-debug.log
 .runtimeconfig.json
-public/updates/
+public/updates/*.dmg
+public/updates/*.delta
 public/downloads/

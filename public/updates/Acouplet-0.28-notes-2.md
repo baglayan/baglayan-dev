@@ -1,0 +1,1 @@
+- Updated the multipoint and head gesture interfaces.
