@@ -1,0 +1,1 @@
+- Added automatic driver installer launch for required LDAC updates, including older XM5-named drivers. Headphones do not need to be connected; macOS authorization and a restart are still required.

@@ -8,7 +8,7 @@
             <sparkle:version>66</sparkle:version>
             <sparkle:shortVersionString>0.28.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.4</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink sparkle:edSignature="3Yvt5HP628hi2/TOAKRXPkUYtxIzgck70NNqzN3+NBG2Rmp1zkjAWQkaCY0de5HKt76j+gPSSyRZyqiE7LzRAw==" sparkle:length="51">https://baglayan.dev/updates/Acouplet-0.28.3-notes-2.md</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink sparkle:edSignature="KB466P0CpHPuCnRHxKlb09qWh6zE+LSOIlg7rGYq+IOdRWYheEXARtbY0O9FQID0rkgw/2S52U4OjvrqFFRwBw==" sparkle:length="198">https://baglayan.dev/updates/Acouplet-0.28.3.md</sparkle:releaseNotesLink>
             <enclosure url="https://github.com/baglayan/acouplet/releases/download/v0.28.3/Acouplet-0.28.3.dmg" length="26686279" type="application/octet-stream" sparkle:edSignature="IJiq/7JsCCJuHYSSbrIRQGXRUnETsJMuw2HB3JaGtHPOoHgYeSzs3YC3LI2uh0x11I1AMDxVbtXrnA5uSkOTCg=="/>
         </item>
         <item>
@@ -59,6 +59,6 @@
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: kex/UjbD5Tnano5fYzxWpM/PLJ3hkLuFGyp3oCOBteG4JfmEqWGVDTcAIkV7VLx2fjiLrYH+om/0uEdVP6VHCg==
-length: 5300
+edSignature: HYDWrTQW6Qg5kyX43/FvF3wmLw+Zr/jtnMyZ7s28rb+/2s+OnUWLkUA9A/KhteBRaU72789kdoM9MMuXnKliBw==
+length: 5293
 -->
