@@ -1,0 +1,3 @@
+- Fixed a freeze after Find Earbuds requests were rejected.
+- Fixed Sound Settings to follow the system accent color.
+- Clarified headphone connection errors.
