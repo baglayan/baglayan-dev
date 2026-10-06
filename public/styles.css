@@ -9,6 +9,14 @@ html {
     background: #002C32;
 }
 
+body {
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100svh;
+    margin: 0;
+    padding: 1rem;
+}
+
 p,
 a {
     color: #E5E5E5;
@@ -38,16 +46,9 @@ p {
 .window {
     box-sizing: border-box;
     padding: clamp(1.25rem, 4vw, 3rem);
-    width: max(50vw, 48rem);
-    max-width: 90vw;
+    width: 100%;
+    max-width: 48rem;
+    margin: auto;
     background: #002429;
-    border-radius: 2em;
-    border-top: 10em;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border-radius: 2rem;
 }

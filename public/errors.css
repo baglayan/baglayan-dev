@@ -1,20 +1,11 @@
 .error-page {
-    box-sizing: border-box;
-    display: flex;
-    min-height: 100svh;
-    margin: 0;
-    padding: 1rem;
     color: #E5E5E5;
     font-family: 'Monaspace', 'Monaco', 'Consolas', monospace;
     overflow-wrap: anywhere;
 }
 
 .error-page .window {
-    width: 100%;
-    max-width: 48rem;
-    margin: auto;
     padding-bottom: calc(clamp(1.25rem, 4vw, 3rem) + 1lh);
-    border-radius: 2rem;
     font-size: clamp(1rem, 2.6vw, 1.75rem);
     line-height: clamp(1.5rem, 4vw, 2.5rem);
 }
