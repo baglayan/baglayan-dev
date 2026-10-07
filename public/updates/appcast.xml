@@ -3,6 +3,15 @@
     <channel>
         <title>Acouplet</title>
         <item>
+            <title>0.29.3</title>
+            <pubDate>Wed, 07 Oct 2026 11:44:20 +0300</pubDate>
+            <sparkle:version>82</sparkle:version>
+            <sparkle:shortVersionString>0.29.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.4</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink sparkle:edSignature="rctahbrXQt5ucnn3S80nKudtYVCQph+V+RHixZ/cVem7zuqs7Sbrv4L/ai9JjCFHjXTXGJ9PWZKOKVfjtUY3BQ==" sparkle:length="246">https://baglayan.dev/updates/Acouplet-0.29.3.md</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/baglayan/acouplet/releases/download/v0.29.3/Acouplet-0.29.3.dmg" length="27197468" type="application/octet-stream" sparkle:edSignature="Be7eGtbq6L9dHaZ1yTEj2iMzJTI2BzfJjYBjxCni7ZFIFwvhRoYj+rAYW/ccz4iHKKV4mnZMy1EKw06yv2i1Dw=="/>
+        </item>
+        <item>
             <title>0.29.2</title>
             <pubDate>Tue, 06 Oct 2026 21:20:01 +0300</pubDate>
             <sparkle:version>69</sparkle:version>
@@ -86,6 +95,6 @@
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 9eaJldNK2tHoU5RN7KGX+bTHcU/y+6j4zg6SUdJdG4z28guKOecgdI7CxGfMhI6CS8zWi+78j1w5Tz8NE01qCg==
-length: 7896
+edSignature: liTh4YxoHZQRPQWlVkFcbxUNQmKdqYg2Uq9pQS+l7WlsIoIK7IEIi7lF2cBxtcXwIqD8ZpawAFKV2bKSTdmzBQ==
+length: 8748
 -->
