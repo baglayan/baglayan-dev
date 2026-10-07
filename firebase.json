@@ -30,6 +30,26 @@
     ],
     "redirects": [
       {
+        "source": "/github",
+        "destination": "https://github.com/baglayan",
+        "type": 302
+      },
+      {
+        "source": "/linkedin",
+        "destination": "https://linkedin.com/in/baglayan",
+        "type": 302
+      },
+      {
+        "source": "/email",
+        "destination": "mailto:meric.baglayan@outlook.com",
+        "type": 302
+      },
+      {
+        "source": "/resume",
+        "destination": "/assets/documents/meric-resume.pdf",
+        "type": 302
+      },
+      {
         "source": "/index.html",
         "destination": "/",
         "type": 301

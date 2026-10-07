@@ -47,34 +47,3 @@
 .pending-command {
     white-space: nowrap;
 }
-
-.terminal-cursor {
-    display: inline-block;
-    width: 1ch;
-    height: 1em;
-    margin-left: 0.25ch;
-    vertical-align: -0.15em;
-    background: currentColor;
-    animation: blink 1s step-end infinite;
-}
-
-#next-line {
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
-
-#next-line .terminal-cursor {
-    margin-left: 0;
-    animation: none;
-}
-
-@keyframes blink {
-    50% { opacity: 0; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .terminal-cursor {
-        animation: none;
-    }
-}

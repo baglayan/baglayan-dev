@@ -15,6 +15,7 @@
     <meta property="og:url" content="https://baglayan.dev/" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="terminal.js" defer></script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -35,20 +36,33 @@
     </script>
 </head>
 
-<body>
+<body class="home-page">
     <main class="window">
-        <p class="cmdstart">guest@baglayan</p><p>:</p><p class="shell-info">~$</p><p class="command"> info</p><br />
-        <br />
-        <p>meriç bağlayan</p><br />
-        <p>computer engineer</p><br />
-        <br />
-        <p class="cmdstart">guest@baglayan</p><p>:</p><p class="shell-info">~$</p><p class="command"> ls</p><br />
-        <br />
-        <a href="https://github.com/baglayan">github</a><br />
-        <a href="https://linkedin.com/in/baglayan">linkedin</a><br />
-        <a href="mailto:meric.baglayan@outlook.com">email</a><br />
-        <a href="/assets/documents/meric-resume.pdf">resume</a><br />
-        <a href="/acouplet/">acouplet</a>
+        <div id="terminal-history" role="log" aria-label="Terminal output">
+            <p class="cmdstart">guest@baglayan</p><p>:</p><p class="shell-info">~$</p><p class="command"> info</p><br />
+            <br />
+            <p id="profile-name">meriç bağlayan</p><br />
+            <p id="profile-role">computer engineer</p><br />
+            <br />
+            <p class="cmdstart">guest@baglayan</p><p>:</p><p class="shell-info">~$</p><p class="command"> ls</p><br />
+            <br />
+            <nav class="directory-list" aria-label="Pages">
+                <a href="/github">github</a>
+                <a href="/email">email</a>
+                <a href="/acouplet/">acouplet</a>
+                <a href="/linkedin">linkedin</a>
+                <a href="/resume">resume</a>
+            </nav>
+        </div>
+        <form class="terminal-prompt" id="terminal-form">
+            <label for="terminal-input"><span class="cmdstart">guest@baglayan</span>:<span class="shell-info">~$</span></label>
+            <span class="terminal-entry">
+                <textarea id="terminal-input" rows="1" aria-label="Terminal command" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="go" autofocus></textarea>
+                <span class="terminal-mirror" aria-hidden="true"><span class="terminal-prefix"></span><span class="terminal-position">&#8203;</span></span>
+                <span class="terminal-cursor" aria-hidden="true"></span>
+            </span>
+            <span id="next-line" aria-hidden="true"></span>
+        </form>
     </main>
 </body>
 

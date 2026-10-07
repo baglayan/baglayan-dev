@@ -1,10 +1,25 @@
 import errno
+import json
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from urllib.parse import urlsplit
+
+
+redirects = json.loads(Path("firebase.json").read_text())["hosting"]["redirects"]
 
 
 class Handler(SimpleHTTPRequestHandler):
+    def send_head(self):
+        for redirect in redirects:
+            if urlsplit(self.path).path == redirect["source"]:
+                self.send_response(redirect["type"])
+                self.send_header("Location", redirect["destination"])
+                self.send_header("Content-Length", "0")
+                self.end_headers()
+                return None
+        return super().send_head()
+
     def send_error(self, code, message=None, explain=None):
         if code != 404:
             return super().send_error(code, message, explain)

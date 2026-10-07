@@ -18,7 +18,9 @@ body {
 }
 
 p,
-a {
+a,
+.home-page .window,
+.terminal-prompt {
     color: #E5E5E5;
     font-family: 'Monaspace', 'Monaco', 'Consolas', monospace;
     font-style: normal;
@@ -51,4 +53,131 @@ p {
     margin: auto;
     background: #002429;
     border-radius: 2rem;
+}
+
+.directory-list {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    column-gap: clamp(0.5rem, 4vw, 3rem);
+}
+
+.home-page .window {
+    max-height: calc(100svh - 2rem);
+    overflow-y: auto;
+    scroll-behavior: auto;
+    padding-bottom: calc(clamp(1.25rem, 4vw, 3rem) + clamp(1.5rem, 4vw, 2.5rem));
+}
+
+.terminal-command {
+    display: block;
+    margin: 1lh 0 0;
+    overflow-wrap: anywhere;
+    white-space: break-spaces;
+}
+
+.terminal-output {
+    margin-top: 1lh;
+}
+
+.terminal-output p {
+    display: block;
+    margin: 0;
+}
+
+.terminal-completions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, min(100%, var(--completion-width)));
+    column-gap: 2ch;
+    overflow-wrap: anywhere;
+}
+
+#terminal-history:empty + .terminal-prompt {
+    margin-top: 0;
+}
+
+.terminal-prompt {
+    position: relative;
+    display: block;
+    margin-top: 1lh;
+}
+
+.terminal-prompt label {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.terminal-entry {
+    position: relative;
+    display: block;
+}
+
+.terminal-entry textarea,
+.terminal-mirror {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    white-space: break-spaces;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+    text-indent: calc(var(--prompt-width) + 1ch);
+    font: inherit;
+}
+
+.terminal-entry textarea {
+    display: block;
+    resize: none;
+    overflow: hidden;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    background: transparent;
+    color: #FCA311;
+    caret-color: transparent;
+}
+
+.terminal-mirror {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.terminal-entry .terminal-cursor {
+    position: absolute;
+    top: var(--caret-y, 0.2em);
+    left: var(--caret-x, 0px);
+    margin-left: 0;
+    pointer-events: none;
+}
+
+.terminal-cursor {
+    display: inline-block;
+    width: 1ch;
+    height: 1em;
+    margin-left: 0.25ch;
+    vertical-align: -0.15em;
+    background: currentColor;
+    animation: blink 1s step-end infinite;
+}
+
+#next-line {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+#next-line .terminal-cursor {
+    margin-left: 0;
+    animation: none;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .terminal-cursor {
+        animation: none;
+    }
 }
