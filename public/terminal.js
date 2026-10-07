@@ -45,7 +45,18 @@ terminalInput.addEventListener('input', () => {
     terminalWindow.scrollTop = terminalWindow.scrollHeight;
 });
 function handleCommandKey(event) {
-    if (event.isComposing || event.metaKey || event.ctrlKey || event.altKey || terminalInput.readOnly) return;
+    if (event.isComposing || event.metaKey || event.altKey || terminalInput.readOnly) return;
+    if (event.ctrlKey) {
+        if (event.key.toLowerCase() === 'd') {
+            event.preventDefault();
+            window.close();
+        } else if (event.key.toLowerCase() === 'c') {
+            event.preventDefault();
+            terminalInput.value = '';
+            terminalForm.requestSubmit();
+        }
+        return;
+    }
     if (event.key === 'Enter') {
         event.preventDefault();
         terminalForm.requestSubmit();
@@ -66,7 +77,7 @@ function handleCommandKey(event) {
         if (!match) return;
         const directory = /^\s*cd\s+/.test(before);
         const choices = match[2].startsWith('/') ? destinations.map(value => '/' + value) :
-            directory ? [...destinations, '.', '..', '~'] : ['ls', 'info', 'clear', 'cd', ...destinations];
+            directory ? [...destinations, '.', '..', '~'] : ['ls', 'info', 'clear', 'exit', 'cd', ...destinations];
         const matches = choices.filter(value => value.startsWith(match[2]));
         if (!matches.length) return;
         let completed = matches[0];
@@ -119,6 +130,10 @@ terminalWindow.addEventListener('wheel', event => {
 }, { passive: false });
 
 document.addEventListener('keydown', event => {
+    if (event.target !== terminalInput && event.ctrlKey && ['c', 'd'].includes(event.key.toLowerCase())) {
+        handleCommandKey(event);
+        return;
+    }
     if (event.target === terminalInput || event.metaKey || event.ctrlKey || event.altKey || event.isComposing) return;
     if (event.key === 'Enter' && !event.target.closest('a')) {
         event.preventDefault();
@@ -137,12 +152,17 @@ document.addEventListener('keydown', event => {
 
 terminalForm.addEventListener('submit', event => {
     event.preventDefault();
-    const command = terminalInput.value.trim();
-    if (!command || terminalInput.readOnly) return;
-    commandHistory.push(terminalInput.value);
+    if (terminalInput.readOnly) return;
+    const input = terminalInput.value.trim();
+    const command = input.split(/\s+/)[0];
+    if (command) commandHistory.push(terminalInput.value);
     historyIndex = commandHistory.length;
     historyDraft = '';
     lastCompletion = null;
+    if (command === 'exit') {
+        window.close();
+        return;
+    }
     if (command === 'clear') {
         terminalHistory.replaceChildren();
         terminalInput.value = '';
@@ -151,9 +171,9 @@ terminalForm.addEventListener('submit', event => {
         terminalWindow.scrollTop = 0;
         return;
     }
-    const isChangeDirectory = /^cd(?:\s|$)/.test(command);
-    const path = isChangeDirectory ? command.slice(2).trim() : command;
-    if (command === 'ls' || command === 'info' || (isChangeDirectory && ['', '.', '..', '~', '/'].includes(path))) {
+    const isChangeDirectory = command === 'cd';
+    const path = isChangeDirectory ? input.slice(2).trim() : destinations.includes(command) ? command : input;
+    if (!command || command === 'ls' || command === 'info' || (isChangeDirectory && ['', '.', '..', '~', '/'].includes(path))) {
         const line = document.createElement('p');
         line.className = 'terminal-command';
         const prompt = terminalForm.querySelector('label').cloneNode(true);
