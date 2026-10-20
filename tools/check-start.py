@@ -21,7 +21,7 @@ def check(port):
     try:
         assert select.select([process.stdout], [], [], 5)[0], "Server did not start"
         assert process.stdout.readline().strip() == f"Serving HTTP at http://127.0.0.1:{port}/"
-        for path in ("/", "/acouplet/"):
+        for path in ("/", "/acouplet/", "/acouplet/history/"):
             with urlopen(f"http://127.0.0.1:{port}{path}", timeout=5) as response:
                 assert response.status == 200
                 assert response.read() == (directory / "public" / path.lstrip("/") / "index.html").read_bytes()
@@ -49,4 +49,4 @@ with socket.create_server(("127.0.0.1", 4173)):
     check(4174)
     with socket.create_server(("127.0.0.1", 4174)):
         check(4175)
-print("Static server: port fallback, both pages and custom 404 GET/HEAD responses passed.")
+print("Static server: port fallback, all pages and custom 404 GET/HEAD responses passed.")

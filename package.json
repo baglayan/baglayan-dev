@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "start": "python3 tools/start.py",
-    "check:updates": "node tools/check-acouplet-updates.mjs"
+    "check:updates": "node tools/check-acouplet-updates.mjs",
+    "check:history": "node tools/check-acouplet-history.mjs"
   },
   "engines": {
     "node": ">=20"
