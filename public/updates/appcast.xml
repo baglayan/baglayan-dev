@@ -3,6 +3,16 @@
     <channel>
         <title>Acouplet</title>
         <item>
+            <title>0.33.3</title>
+            <pubDate>Sat, 07 Nov 2026 19:15:03 +0300</pubDate>
+            <sparkle:fullReleaseNotesLink>https://baglayan.dev/acouplet/history/</sparkle:fullReleaseNotesLink>
+            <sparkle:version>113</sparkle:version>
+            <sparkle:shortVersionString>0.33.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.4</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink sparkle:edSignature="DOcatnvlx1Pdex7IrT0+Y7HB6F7Fi3owAwQe3YiRauL0EuD+Xr+1zStv3rGTHj50trM7ce/eyzO/0Vs84QIXDA==" sparkle:length="150">https://baglayan.dev/updates/Acouplet-0.33.3.md</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/baglayan/acouplet/releases/download/v0.33.3/Acouplet-0.33.3.dmg" length="41106250" type="application/octet-stream" sparkle:edSignature="ZJdD2kT4EVmf6eADlJFXjsvDdvoKTtkZ8f0ml96/Z79xm2wHw9hhnKy0NpswX9NqbXxgaPGtI/FfJ17XHPiGAQ=="/>
+        </item>
+        <item>
             <title>0.33.2</title>
             <pubDate>Sat, 07 Nov 2026 14:34:49 +0300</pubDate>
             <sparkle:fullReleaseNotesLink>https://baglayan.dev/acouplet/history/</sparkle:fullReleaseNotesLink>
@@ -163,6 +173,6 @@
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: DiQPsYCfwmIFnMPOtbSX3TbokJVwrl5YO6eP3MUra1J6hAkcT15pbJjOUkcGp50kRvaBaYSK5cAI9WV4Vjc+Dg==
-length: 15236
+edSignature: 23BE4rnS7OxtHkJ0xF+nWBk0kvgHokgRdm99wMnQn9yZ4pLFJyFTxu8tnRbLNV3tbL/6iatj6SWP6HbAUV52Cg==
+length: 16201
 -->
